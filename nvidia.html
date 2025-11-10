@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 플랫폼 - 홈</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        /* 히어로 섹션 배경 예시 (나중에 실제 이미지로 교체 필요) */
+        .hero-bg {
+            background-image: url('https://placehold.co/1920x1080/1a1a1a/FFF?text=Hero+Image+Placeholder');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <!-- 상단 내비게이션 바 -->
+    <nav class="flex items-center justify-between px-6 py-4 bg-black/80 backdrop-blur-md fixed w-full z-50 border-b border-gray-800">
+        <div class="flex items-center">
+            <!-- 로고 (텍스트 또는 이미지) -->
+            <a href="#" class="text-2xl font-black text-green-500 mr-8">AI PLATFORM</a>
+            <!-- 데스크톱 메뉴 -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-green-400 transition-colors">제품</a>
+                <a href="#" class="hover:text-green-400 transition-colors">솔루션</a>
+                <a href="#" class="hover:text-green-400 transition-colors">커뮤니티</a>
+                <a href="#" class="hover:text-green-400 transition-colors">지원</a>
+            </div>
+        </div>
+        <!-- 우측 아이콘 (예시) -->
+        <div class="flex items-center space-x-4">
+            <button class="p-2 hover:bg-gray-800 rounded-full transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </button>
+            <a href="#" class="hidden md:block px-4 py-1 border border-white rounded-full hover:bg-white hover:text-black transition-colors font-bold text-sm">로그인</a>
+        </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero-bg h-screen flex items-center relative">
+        <!-- 배경 오버레이 (텍스트 가독성을 위해) -->
+        <div class="absolute inset-0 bg-black/50"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-2xl">
+                <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+                    미래를 여는<br>
+                    <span class="text-green-500">AI 기술의 중심</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-10">
+                    최첨단 인공지능 솔루션으로 교육 현장의 혁신을 경험하세요. 더 효율적이고 스마트한 업무 환경을 제공합니다.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="px-8 py-3 bg-green-500 text-black font-bold rounded-full hover:bg-green-400 transition-colors text-lg">
+                        자세히 알아보기
+                    </a>
+                    <a href="#" class="px-8 py-3 border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-black transition-colors text-lg">
+                        데모 체험하기
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 예시 콘텐츠 섹션 (카드형 레이아웃 시작점) -->
+    <section class="py-20 bg-zinc-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12">주요 기능 살펴보기</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 카드 1 -->
+                <div class="bg-black border border-gray-800 rounded-xl overflow-hidden hover:border-green-500 transition-colors group">
+                    <div class="h-48 bg-gray-800">
+                         <img src="https://placehold.co/600x400/333/FFF?text=Feature+1" alt="기능 1" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-green-400 transition-colors">지능형 문서 처리</h3>
+                        <p class="text-gray-400">AI가 자동으로 문서를 분류하고 핵심 내용을 요약하여 업무 시간을 단축합니다.</p>
+                    </div>
+                </div>
+                <!-- 카드 2 -->
+                <div class="bg-black border border-gray-800 rounded-xl overflow-hidden hover:border-green-500 transition-colors group">
+                     <div class="h-48 bg-gray-800">
+                         <img src="https://placehold.co/600x400/333/FFF?text=Feature+2" alt="기능 2" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-green-400 transition-colors">스마트 챗봇 도우미</h3>
+                        <p class="text-gray-400">24시간 언제든지 질문에 답변하고 필요한 자료를 찾아주는 AI 비서입니다.</p>
+                    </div>
+                </div>
+                <!-- 카드 3 -->
+                <div class="bg-black border border-gray-800 rounded-xl overflow-hidden hover:border-green-500 transition-colors group">
+                     <div class="h-48 bg-gray-800">
+                         <img src="https://placehold.co/600x400/333/FFF?text=Feature+3" alt="기능 3" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 group-hover:text-green-400 transition-colors">데이터 분석 시각화</h3>
+                        <p class="text-gray-400">복잡한 데이터를 직관적인 차트와 그래프로 시각화하여 의사결정을 지원합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
